@@ -43,7 +43,7 @@ function Detail({name, post, Rating,id}) {
     <div className='p-4 mt-4 flex flex-col md:flex-row items-center md:items-start w-full justify-center'>
       { loading ? <div className='h-96 flex w-full justify-center items-center' ><ThreeCircles height={80} color='white'  /></div> :
         <>
-       <img className='h-96 block md:sticky top-24' src={post} alt="Loading" />
+       <img className='h-96 block md:sticky top-24 rounded-lg bg-gray-100 shadow-lg object-cover mb-5' src={post} alt="Loading" />
        <div className='md:ml-4 ml-8 flex-wrap w-full md:w-1/2'>
        <h1 className='text-3xl font-bold text-gray-400'>{name} <span>(2023)</span></h1>
 
@@ -54,7 +54,7 @@ function Detail({name, post, Rating,id}) {
               edit={false} 
        />
 
-       <p className='mt-3 flex-wrap'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad minus sequi est dolor sapiente! Atque nulla quos, numquam provident ea nihil ratione corrupti dolore accusantium odit velit libero architecto consequatur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, autem nemo quasi iusto illo necessitatibus neque nam, voluptatibus ut explicabo vitae harum perferendis excepturi temporibus quia? Minima adipisci reprehenderit neque!</p>
+       <p className='mt-3 flex-wrap'>The story centers around main character, who brief description of the central plot or conflict. As the plot unfolds, mention key events or turning points, avoiding major spoilers, leading the characters on a journey through describe the setting or context. Throughout their journey, they face briefly describe challenges or conflicts, ultimately reaching hint at the resolution or climax without giving it away. they face briefly describe challenges or conflicts, ultimately reaching hint at the resolution or climax without giving it away.</p>
 
        <Reviews id = {id}/>
        

@@ -13,7 +13,7 @@ function Header() {
        <Link to={'./'}><span>Movie<span className=' text-red-500 cursor-pointer'>Nova</span></span></Link>
        
        {useAppstate.login ?
-       <Link to={'./welcome'}><h1 className='text-sm md:text-lg md:px-12 px-5  transition duration-2000 hover:bg-blue-gray-600  rounded-xl p-2 cursor-pointer ring ring-white '>WELCOME</h1></Link>
+       <Link to={'./'}><h1 className='text-sm md:text-lg md:px-12 px-5  transition duration-2000 hover:bg-blue-gray-600  rounded-xl p-2 cursor-pointer ring ring-white '>WELCOME</h1></Link>
 
        :
        <Link to={'./signup3'}><h1 className='text-sm md:text-lg md:px-12 px-5  transition duration-2000 hover:bg-blue-gray-800  rounded-xl p-2 cursor-pointer ring ring-white '>LOG IN</h1></Link>

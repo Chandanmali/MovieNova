@@ -11,11 +11,26 @@ import Signup3 from './components/Signup3'
 import React, { useEffect } from 'react';
 import swal from 'sweetalert'
 import { useNavigate } from 'react-router-dom'
+import Song3 from './aodio/welcome.mp3'
 
 const Appstate = createContext();
 
 function App({id}) {
     const navigate = useNavigate();
+    
+    useEffect(() => {
+      const timer = setTimeout(() => {
+        //alert('This is a 5-second alert!');
+        function play(){
+          new Audio(Song3).play();
+        }
+        play();
+      }, 1000); 
+  
+      return () => play();
+    }, []); 
+
+    
     useEffect(() => {
       const timer = setTimeout(() => {
         //alert('This is a 5-second alert!');
@@ -31,7 +46,7 @@ function App({id}) {
           }
 
         })
-      }, 8000); // 5000 milliseconds = 5 seconds
+      }, 11000); // 5000 milliseconds = 5 seconds
   
       // Clean up the timer if the component is unmounted before the timer completes
       return () => clearTimeout(timer);
@@ -82,7 +97,7 @@ function App({id}) {
 
       }
 
-      <Route path = "/welcome" element={<Welcome/>} />
+      {/* <Route path = "/welcome" element={<Welcome/>} /> */}
 
     
 

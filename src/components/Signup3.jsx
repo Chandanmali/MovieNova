@@ -8,6 +8,7 @@ import {ThreeCircles} from 'react-loader-spinner'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { useNavigate } from 'react-router-dom';
+import Song2 from '../aodio/sign.mp3'
 
 
 function Signup3() {
@@ -15,6 +16,11 @@ function Signup3() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+
+  function play2(){
+    new Audio(Song2).play();
+
+  }
   
   const [loading, setLoading] = useState(true);
        useEffect(() => {
@@ -41,8 +47,7 @@ function Signup3() {
           icon: "success",
           buttons: false,
           timer: 4000
-        });
-        
+        }); 
         toast.success("Accout Created Successfully🎉")
         navigate('/login');
 
@@ -100,7 +105,7 @@ function Signup3() {
         </div>
         
         <div className='mt-12 flex justify-center md:w-96 w-72 rounded-xl cursor-pointer ring ring-white text-black  bg-white'>
-        <button className='text-center p-2 md:w-60  font-bold text-lg flex justify-center' type='submit'>Sign Up</button><ToastContainer/>
+        <button onClick={play2} className='text-center p-2 md:w-60  font-bold text-lg flex justify-center' type='submit'>Sign Up</button><ToastContainer/>
         </div>
         <br />
         <p className='mt-3 text-lg'>Already Registered? <span className='text-orange-800 font-bold'><Link to='/login'>Login</Link></span></p>

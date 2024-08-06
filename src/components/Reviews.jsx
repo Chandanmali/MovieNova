@@ -8,8 +8,8 @@ import swal from 'sweetalert';
 import { db } from '../firebase/Firebase';
 //import Data from '../datas.json'
 import { getFirestore } from 'firebase/firestore';
-import { collection } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
+import Song4 from '../aodio/Review.mp3'
 
 const dba = getFirestore();
 function Reviews({id}) {
@@ -20,12 +20,13 @@ function Reviews({id}) {
   const [data, setData] = useState([]);
   const [reviewloading, setReviewloading] = useState(false);
   const navigate = useNavigate();
-  const [check, setCheck] = useState(false);
   
-  
+  function play4(){
+       new Audio(Song4).play();
    
+     }
   const sendReview = async() => {
-        setCheck(false) ? navigate('/signup3') :
+       
               setLoading(true)
               
 
@@ -80,6 +81,11 @@ function Reviews({id}) {
     getData();
   }, [])
   
+  const handleClick = () => {
+       play4();
+       sendReview();
+       
+     };
 
   return (
     <div className='mt-6 border-t-2 border-gray-700 w-full'>
@@ -97,7 +103,7 @@ function Reviews({id}) {
          className='w-full p-2 font-semibold rounded-sm  outline-none bg-blue-gray-800 text-white'
       
       />
-      <button onClick={sendReview} id='unicode' className='text-white bg-blue-gray-800 w-full  p-2 rounded-3xl mt-2 font-bold  duration-200 flex justify-center'>
+      <button onClick={handleClick} id='unicode' className='text-white bg-blue-gray-800 w-full  p-2 rounded-3xl mt-2 font-bold  duration-200 flex justify-center'>
          {loading ? <TailSpin height={25} color='white'/> : 'Share'}
       </button>
 

@@ -9,6 +9,8 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
+import Song from '../aodio/song.mp3'
+
 
 
 function Login() {
@@ -16,6 +18,12 @@ function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  function play(){
+    new Audio(Song).play();
+    
+
+  }
+  
 
   
   
@@ -107,7 +115,8 @@ function Login() {
         </div>
         
         <div className='mt-12 flex justify-center md:w-96 w-72 rounded-xl cursor-pointer ring ring-white text-black  bg-white'>
-        <button className='text-center p-2 md:w-60  font-bold text-lg flex justify-center' type='submit'>Log In</button><ToastContainer/>
+
+        <button onClick={play} className='text-center p-2 md:w-60  font-bold text-lg flex justify-center' type='submit'>Log In</button><ToastContainer/>
         </div>
         <br />
         <p className='mt-3 text-lg'>Don't have an account <span className='text-orange-800 font-bold'><Link to='/signup3'>Sign Up</Link></span></p>

@@ -6,11 +6,13 @@ import { useState, useEffect } from 'react';
 import { Audio, ThreeDots } from "react-loader-spinner";
 import Detail from './Detail';
 import Datas from '../datas.json'
+import { useNavigate } from 'react-router-dom';
 
 
 function Cards({ name, post, Rating, id }) {
 
   const [data, setData] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     let addData = () => {
@@ -41,7 +43,7 @@ function Cards({ name, post, Rating, id }) {
   return (
     <div className='inline-flex justify-center relative md:left-6 md:px-1 mt-6'>
       
-    <div className='flex-wrap justify-center ml-2 mt-3'>
+    <div className='flex-wrap justify-center md:ml-4 ml-0 mt-3'>
       <Link to={`/detail/${id}`}><div className='p-2 shadow-lg transition-all duration-500 bg-slate-800 bg-blue rounded-lg hover:-translate-y-4 cursor-pointer mt-6 '>
         <img className='h-48 flex justify-center md:h-64  rounded-xl transition-all duration-500  hover:opacity-75 ease-in-out ml-2' src={post} alt="Loading" />
         <h1 className='text-center font-bold'>{name}</h1>
