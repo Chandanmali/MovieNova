@@ -1,0 +1,97 @@
+[
+       {
+         "name": "BHOOT POLICE",
+         "post": "https://pbs.twimg.com/media/E5hc9PPUYAUsLVF.jpg:large",
+         "Rating": "3",
+         "id": "0"
+       },
+       {
+         "name": "SADAK 2",
+         "post": "https://www.masala.com/cloud/2021/07/27/WqVOcqxV-Screen-Shot-2020-08-10-at-17.46.40.png-1.png",
+         "Rating": "4",
+         "id": 1
+       },
+       {
+         "name": "BHOOL BHULAIYAA 2",
+         "post": "https://pbs.twimg.com/media/FJ3f2smVUAQd-hP.jpg",
+         "Rating": "3.5",
+         "id": 2
+       },
+       {
+         "name": "BHOLAA",
+         "post": "https://pbs.twimg.com/media/Fm-xv4naAAEc2xV.jpg:large",
+         "Rating": "4.5",
+         "id": 3
+       },
+       {
+         "name": "RAJAN",
+         "post": "https://pbs.twimg.com/media/FiyY-ubVUAIwPau?format=jpg&name=large",
+         "Rating": "3",
+         "id": 4
+       },
+       {
+         "name": "GOLIMAAR",
+         "post": "https://pbs.twimg.com/media/Fs7PD8waMAAJygK.jpg:large",
+         "Rating": "2.5",
+         "id": 5
+       },
+       {
+         "name": "TIGER 3",
+         "post": "https://pbs.twimg.com/media/F8iqP9EWIAAXfyx.jpg:large",
+         "Rating": "3.5",
+         "id": 6
+       },
+       {
+         "name": "FORCE 2",
+         "post": "https://pbs.twimg.com/media/CtXvNtuVMAU0Om3.jpg:large",
+         "Rating": "3",
+         "id": 7
+       },
+       {
+         "name": "AVENGERS",
+         "post": "https://m.media-amazon.com/images/M/MV5BMjMxNjY2MDU1OV5BMl5BanBnXkFtZTgwNzY1MTUwNTM@._V1_.jpg",
+         "Rating": "4.5",
+         "id": 8
+       },
+       {
+         "name": "JHUND",
+         "post": "https://assets.gadgets360cdn.com/pricee/assets/product/202202/Jhund_Poster_1645612723.jpg",
+         "Rating": "4",
+         "id": 9
+       },
+       {
+         "name": "HULK",
+         "post": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJbhLAtdMx_DWwVsZcEBljSweKlpJRd40d2A&s",
+         "Rating": "4",
+         "id": 10
+       },
+       {
+         "name": "SPIDER MAN",
+         "post": "https://m.media-amazon.com/images/M/MV5BZjI5NmFmOWUtZWY0ZS00NTc5LWE0YjgtMjk3YmNiM2EwM2U4XkEyXkFqcGdeQXVyMTA1NjE5MTAz._V1_.jpg",
+         "Rating": "3",
+         "id": 11
+
+       },
+       {
+         "name": "SPIDER MAN-2",
+         "post": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKVQLu_0Xr2ADB--dScRokN_nO9gRzvHx9Zo8nU5Pxezih0k9M1cZGoKi-U8pRPGJnwDI&usqp=CAU",
+         "Rating": "2.5",
+         "id": 12
+       },
+
+       {
+        "name": "BADLA",
+        "post": "https://assets.gadgets360cdn.com/pricee/assets/product/202205/Badla-poster_1652810504.jpg",
+        "Rating": "3",
+        "id": 13
+      }, 
+
+       {
+         "name": "GOOD BYE",
+         "post": "https://assets.thehansindia.com/h-upload/2022/10/11/1315884-amitabh-bachchan.jpg",
+         "Rating": "5",
+         "id": 14
+       }
+       
+       
+]       
