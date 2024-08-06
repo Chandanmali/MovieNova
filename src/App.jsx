@@ -18,19 +18,19 @@ const Appstate = createContext();
 function App({id}) {
     const navigate = useNavigate();
     
+   
     useEffect(() => {
-      const timer = setTimeout(() => {
-        //alert('This is a 5-second alert!');
-        function play(){
-          new Audio(Song3).play();
-        }
-        play();
-      }, 1000); 
-  
-      return () => play();
-    }, []); 
+      const timer2 = setTimeout(() => {    
+      function play5(){
+        new Audio(Song3).play();
+      }
+      play5();
+    }, 2000);
+      
+    }, [])
+        
+        
 
-    
     useEffect(() => {
       const timer = setTimeout(() => {
         //alert('This is a 5-second alert!');
